@@ -1,0 +1,29 @@
+﻿namespace Ext4ConsoleReader.PartitionTable.GPT
+{
+    public enum GptPartitionType
+    {
+        // without platform
+        MBR_PARTITION_SCHEME,
+        EFI_SYSTEM_PARTITION,
+        BIOS_BOOT_PARTITION,
+        INTEL_FAST_FLASH_PARTITION,
+        SONY_BOOT_PARTITION,
+        LENOVO_BOOT_PARTITION,
+        // Windows
+        MICROSOFT_RESERVED_PARTITION,
+        BASIC_DATA_PARTITION,
+        WINDOWS_LDM_METADATA_PARTITION,
+        WINDOWS_LDM_DATA_PARTITION,
+        WINDOWS_RECOVERY_ENVIRONMENT,
+        // Linux
+        LINUX_FILESYSTEM_DATA,
+        LINUX_RAID_PARTITION,
+        LINUX_SWAP_PARTITION,
+        LINUX_LVM_PARTITION,
+        LINUX_HOME_PARTITION,
+        LINUX_SERVER_DATA_PARTITION,
+        LINUX_PLAIN_DM_CRYPT_PARTITION,
+        LINUX_UNIFIED_KEY_SETUP_PARTITION,
+        LINUX_RESERVED
+    }
+}
